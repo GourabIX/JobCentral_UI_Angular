@@ -1,1 +1,152 @@
-<p>home works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Job Application Confirmation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<br />
+<div class="card">
+    <h5 class="card-header bg-primary text-white">Looking for a Job? We've got that covered.</h5>
+    <div class="card-body">
+        <form>
+            <div class="form-group row justify-content">
+                <div class="col-sm-4">
+                <input type="text" class="form-control" id="jobTitle" placeholder="Search Job Title">
+                </div>
+                <div class="col-sm-4">
+                <input type="text" class="form-control" id="location" placeholder="In Location">
+                </div>
+                <div class="dropdown col-sm-4">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="category">With Category</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Pune</a>
+                    <a class="dropdown-item" href="#">Bengaluru</a>
+                    <a class="dropdown-item" href="#">Hyderabad</a>
+                    <a class="dropdown-item" href="#">Kolkata</a>
+                </div>
+                </div>
+            </div>
+        </form>
+        <br />
+        <a href="searchJobs" class="btn btn-success d-block">Search Jobs</a>
+    </div>
+</div>
+
+<br />
+<p style="text-align:center;"><img src="../../assets/images/image.jpeg" alt="image"></p>
+<br />
+
+<div class="card">
+    <h5 class="card-header bg-success text-white">Featured Organizations on JobCentral</h5>
+    <div class="card-body">
+        <!-- start cards -->
+        <div class="row justify-content-center">
+        <div class="card" id="card-grid">
+            <div class="container">
+                <a href="#"><h4>Zensar</h4></a>
+            </div>
+            </div> 
+            <div class="card" id="card-grid">
+                <div class="container">
+                <a href="#"><h4>TCS</h4></a>
+                </div>
+            </div> 
+            <div class="card" id="card-grid">
+                <div class="container">
+                <a href="#"><h4>Accenture</h4></a>
+                </div>
+            </div> 
+            <div class="card" id="card-grid">
+                <div class="container">
+                <a href="#"><h4>Capgemini</h4></a>
+                </div>
+            </div> 
+        </div>
+        <!-- end card -->
+    </div>
+</div>
+
+<br />
+<br />
+
+<div class="card">
+    <h5 class="card-header bg-primary text-white">Featured Job Categories on JobCentral</h5>
+    <div class="card-body">
+        <!-- start cards -->
+        <div class="row justify-content-center">
+        <div class="card" id="card-grid">
+            <div class="container">
+                <a href="#"><h4>Information Technology </h4></a>
+            </div>
+            </div> 
+            <div class="card" id="card-grid">
+                <div class="container">
+                <a href="#"><h4>Marketing</h4></a>
+                </div>
+            </div> 
+            <div class="card" id="card-grid">
+                <div class="container">
+                <a href="#"><h4>Healthcare</h4></a>
+                </div>
+            </div> 
+            <div class="card" id="card-grid">
+                <div class="container">
+                <a href="#"><h4>Part-time</h4></a>
+                </div>
+            </div> 
+        </div>
+        <!-- end card -->
+    </div>
+</div>
+<br />
+
+<div class="card" id="hotJobs" style="width: 88%;">
+  <h5 class="card-header bg-success text-white">Jobs Most Applied to on JobCentral</h5>
+  <br />
+  <div class="row justify-content-center">
+  <div class="card" style="width: 20em;">
+      <div class="card-body">
+          <h5 class="card-title"><a routerLink="/jobdescription">Job ID</a></h5>
+          <h6 class="card-subtitle mb-2 text-muted">Job Title</h6>
+          <p class="card-text">Company</p>
+          <small><a routerLink="/jobdescription" class="btn btn-outline-primary">Apply</a></small>
+      </div>  
+  </div>
+  <div class="card" style="width: 20em;">
+      <div class="card-body">
+          <h5 class="card-title"><a routerLink="/jobdescription">Job ID</a></h5>
+          <h6 class="card-subtitle mb-2 text-muted">Job Title</h6>
+          <p class="card-text">Company</p>
+          <small><a routerLink="/jobdescription" class="btn btn-outline-primary">Apply</a></small>
+      </div>  
+  </div>
+  <br/>
+
+  <div class="card" style="width: 20em;">
+      <div class="card" style="width: 20em;">
+              <div class="card-body">
+                  <h5 class="card-title"><a routerLink="/jobdescription">Job ID</a></h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Job Title</h6>
+                  <p class="card-text">Company</p>
+                  <small><a routerLink="/jobdescription" class="btn btn-outline-primary">Apply</a></small>
+              </div>  
+      </div>
+  </div>
+</div>
+<br />
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<br />
+<br />
+</body>
+</html>

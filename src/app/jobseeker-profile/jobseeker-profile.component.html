@@ -1,0 +1,132 @@
+<div class="container-fluid">
+<form class="was-validated" id="myForm">
+        <div class="row">	
+            <div class="col-lg-12 form-group">
+                
+                    <h2>Your Personal Details</h2>
+                <div class="form-row">
+                <div class="form-group">
+            <label>Name :</label>
+            <input type="text" name="name" required/>
+        </div>
+       
+    </div>
+                
+                  <div class="form-row">                                          
+                    <div class="form-group">
+                        <label for="city">City :</label>
+                        <input type="text" name="city" id="city" class="user" required/>
+                    </div>
+                       <div class="form-group">
+                        <div class="form-select">
+                            <select name="state" id="state" class="user">                                        
+                                <option value="mh">State</option>
+                                <option value="bh">Bihar</option>
+                                <option value="mh">Maharashtra</option>
+                                <option value="mp">Madhya Pradesh</option>                                        
+                            </select>
+                            <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                        </div>
+                      </div>
+                   <div class="form-group">
+                    <label for="country">Country :</label>
+                    <input type="text" name="country" id="country" class="user" required/>
+                    </div>
+                </div>
+                 
+                <div class="form-group">
+                    <label for="mobile">Mobile Number :</label>
+                    <input type="text" name="mobile" id="mobile" class="user" required/>
+                </div>
+                
+               <br> <h2>Your Academic Details :</h2><br>
+    
+    <div class="form-group">
+        <div class="form-row">
+             <div class="form-group">
+                <label for="ssc_date">SSC Passed Year:</label>
+                <input type="date" name="ssc_date" id="ssc_date" class="user">
+            </div>
+            <div class="form-group">
+                <label for="ssc_percent">SSC Percentage :</label>
+                <input type="number" name="ssc_percent" id="ssc_percent" class="user">
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-row">
+             <div class="form-group">
+                <label for="hsc_date">HSC Passed Year:</label>
+                <input type="date" name="hsc_date" id="hsc_date" class="user">
+            </div>
+            <div class="form-group">
+                <label for="hsc_percent">SSC Percentage :</label>
+                <input type="number" name="hsc_percent" id="hsc_percent" class="user">
+            </div>
+        </div>
+    </div>
+                    <div class="form-group">
+            <label for="state">Highest Qualification :</label>
+            <div class="form-select" id="sel">
+                <select name="highest_Quali" id="highest_Quali">                                        
+
+                <option value="be"></option>
+                    <option value="mba">MBA</option>
+                    <option value="mtec">MTec</option>
+                    <option value="be">BE</option>
+                    <option value="diploma">Diploma</option>
+                     <option value="hsc">HSC</option> 
+                    <option value="ssc">SSC</option>                                        
+                </select>
+                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+            </div>
+        </div>
+                
+                <div class="form-row">
+    
+        <div class="form-group">
+            <label for="highest_date">Highest Qualification Passed Year:</label>
+                <input type="date" name="highest_date" id="highest_date" class="user">
+        </div>
+           <div class="form-group">
+              <label for="highest_percent">Highest Qualification Percentage :</label>
+                <input type="number" name="highest_percent" id="highest_percent" class="user">
+        </div>
+    </div>
+                
+                <div class="form-group">
+        <label for="certification">Any certification :</label>
+        <input type="textarea" name="certification" id="certification" class="user" >
+    </div>
+    
+    <div class="form-group">
+        <label for="description">Description :</label>
+        <input type="textarea" name="description" id="description" class="user">
+    </div>
+          
+                   <br> <h2>Have you work earlier</h2>  <br>
+                <div class="form-group">
+        <label for="c_name">Company Name :</label>
+        <input type="text" name="c_name" id="c_name" class="user"/>
+    </div>
+    
+    <div class="form-group">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="jtitle">Job Title :</label>
+                <input type="text" name="jtitle" id="jtitle" class="user" />
+            </div>    
+            <div class="form-group">
+                <label for="designation">Designation :</label>
+                <input type="text" name="designation" id="designation" class="user" />
+            </div> 
+        </div>
+    </div>
+            
+                <!-- <input (click)="onSubmit()" type="submit" value="Submit Form" class="submit" name="submit" id="submit" /> -->
+                <button id="submit" class="btn btn-primary" type="submit" [disabled]="seekerForm.form.invalid" (click)="onSubmit()">Submit</button>
+                <div class="mt-20 alert-msg" style="text-align: left;"></div>
+            </div>
+        </div>
+        
+    </form>	

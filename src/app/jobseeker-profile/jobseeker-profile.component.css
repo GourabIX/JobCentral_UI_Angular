@@ -1,0 +1,25 @@
+#myForm{
+    margin: 100px;
+}
+h2{
+    color: chocolate;
+}
+#submit{
+    color: chocolate;
+    background-color:black;
+    height: 40px;
+    border-radius: 7px;
+}
+input{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+select{
+    margin-right: 10px;
+    height: 35px;
+    border-radius: 7px;
+}
+label{
+    font-weight: 650;
+}

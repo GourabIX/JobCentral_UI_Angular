@@ -1,1 +1,101 @@
-<p>job-post works!</p>
+
+	<div class="divstyle">
+		<form class="contact100-form validate-form">
+			<span class="contact100-form-title">
+				Post A Job
+			</span>
+			<div class="wrap-input100 validate-input" data-validate="JobName is required">
+				<label class="label-input100" for="name">Job Name</label>
+				<input id="name" class="input100" type="text" name="name" placeholder="Enter Job name..." required>
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100 validate-input" data-validate="CompanyName is required">
+				<label class="label-input100" for="name">Company Name </label>
+				<input id="name" class="input100" type="text" name="name" placeholder="Enter Company name..." required>
+				<span class="focus-input100"></span>
+			</div>
+			<div class="wrap-input100">
+				<div class="label-input100">Number of Vacancies</div>
+				<div>
+					<select class="js-select2" name="service">
+						<option selected>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+					<div class="dropDownSelect2"></div>
+				</div>
+				<span class="focus-input100"></span>
+			</div>
+			<div class="wrap-input100 validate-input" data-validate = "Valid Skills is required">
+				<label class="label-input100" for="email">Skills</label>
+				<input id="skills" class="input100" type="text" name="skills" placeholder="Enter your Skills..." required>
+				<span class="focus-input100"></span>
+			</div>
+			<div class="wrap-input100 validate-input" data-validate = "Valid Location is required">
+				<div class="label-input100">Location</div>
+				<div>
+					<select class="js-select2" name="service">
+						<option selected>Pune</option>
+						<option>Bangalore</option>
+						<option>Hyderabad</option>
+						<option>Mumbai</option>
+					</select>
+					<div class="dropDownSelect2"></div>
+				</div>
+				<span class="focus-input100"></span>
+			</div>
+			<div class="wrap-input100">
+				<div class="label-input100">Category</div>
+				<div>
+					<select class="js-select2" name="category">
+						<option selected>IT</option>
+						<option>Bussiness</option>
+						<option>Marketing</option>
+						<option>Private</option>
+					</select>
+					<div class="dropDownSelect2"></div>
+				</div>
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100 validate-input" data-validate = "Message is required">
+				<label class="label-input100" for="message">Job Description</label>
+				<textarea id="message" class="input100" name="message" placeholder="Type description of  your job here..."></textarea>
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="container-contact100-form-btn">
+				<a href="employerProfile" class="btn btn-primary contact100-form-btn">Post Job</a>
+			</div>
+			
+			
+		</form>
+
+		<!-- <div class="contact100-more" >
+			<img src="../../assets/images/g4.jpg" style="align-items:flex-start;" alt="Random first slide" width="700" height="900">
+		</div> -->
+	
+</div>
+
+
+<!-- <script>
+	$(".js-select2").each(function(){
+		$(this).select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $(this).next('.dropDownSelect2')
+		});
+	})
+	$(".js-select2").each(function(){
+		$(this).on('select2:open', function (e){
+			$(this).parent().next().addClass('eff-focus-selection');
+		});
+	});
+	$(".js-select2").each(function(){
+		$(this).on('select2:close', function (e){
+			$(this).parent().next().removeClass('eff-focus-selection');
+		});
+	});
+
+</script> -->
