@@ -3,6 +3,8 @@ import { Location } from './location';
 import { Job } from './job';
 import { JobApplications } from './job-applications';
 import { JobSeekerAcademic } from './job-seeker-academic';
+import { JobSeekerPersonal } from './job-seeker-personal';
+import { JobSeekerProfessional } from './job-seeker-professional';
 
 export class JobSeeker {
     jobSeekerId: number;
