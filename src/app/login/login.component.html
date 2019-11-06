@@ -2,34 +2,28 @@
 <h2 style="text-align: center;">Login to your Account</h2>
 <br/>
 <div style="width: 40%;" class="container center_div">
-        <form #employerForm="ngForm" class="was-validated">
-       <!-- <p> valid form : {{employerForm.form.valid}}</p>
-        <p>{{employerForm.value|json}}</p> -->
-    
-    
-         <div class="form-group">
-                <label>Email : </label>
-                <input #em="ngModel" name="email" type="email"  class="form-control" [(ngModel)]="employer.email" required placeholder="Enter your email">
-                <div *ngIf="em.errors && (em.invalid || em.dirty)">
-             <small *ngIf="em.errors.required" class="text-danger">Email is required</small>
-                       
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                        <label>Password : </label>
-                        <input #nm="ngModel" name="name" type="password" class="form-control" [(ngModel)]="employer.name" required placeholder="Enter your password">
-        <div class="valid-feedback">valid</div>
-        <div *ngIf="nm.errors && nm.invalid">
-                <small *ngIf="nm.errors.required" class="text-danger">name is required </small>
+    <form #employerForm="ngForm" class="was-validated" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Email : </label>
+            <input #un="ngModel" name="username" type="email" class="form-control" [(ngModel)]="login.username" required placeholder="Enter your email">
+            <div *ngIf="un.errors && (un.invalid || un.dirty)">
+                <small *ngIf="un.errors.required" class="text-danger">Username is required</small>
+            </div>
+        </div>
+            
+        <div class="form-group">
+            <label>Password : </label>
+            <input #pw="ngModel" name="password" type="password" class="form-control" [(ngModel)]="login.password" required placeholder="Enter your password">
+            <!-- <div class="valid-feedback">valid</div> -->
+            <div *ngIf="pw.errors && (pw.invalid || pw.dirty)">
+                <small *ngIf="pw.errors.required" class="text-danger">Password is required </small>
             </div>
         </div>
         <br/>
         <div style="text-align: center;">
-            <a href="loggedInEmployer" class="btn btn-primary d-block">Sign In</a>
+            <a href="#" class="btn btn-primary d-block">Sign In</a>
         </div>
-        </form> 
-       
-        </div>
-    <br />
-    <br />
+    </form> 
+</div>
+<br />
+<br />
